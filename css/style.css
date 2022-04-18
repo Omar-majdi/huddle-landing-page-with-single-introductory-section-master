@@ -14,7 +14,7 @@
 
 body{
     background-image: url(../images/bg-desktop.svg);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     height: 100vh;
     background-color: var(--violet);
@@ -80,8 +80,10 @@ header {
 }
 
 .text-container a {
-    text-decoration: none;    
+    text-decoration: none;
     padding: 1rem 4.5rem;
+    color: var(--violet);
+    transition: all 0.2s ease-in-out;
 }
 
 .text-container .link {
@@ -97,9 +99,10 @@ header {
     font-family: var(--body);
 }
 
-.text-container .link:hover {
-    background-color: var(--Soft-Magenta);
+.text-container a:hover {
     color: #fff;
+    background-color: var(--Soft-Magenta);
+    border-radius: 25px;
 }
 
 
